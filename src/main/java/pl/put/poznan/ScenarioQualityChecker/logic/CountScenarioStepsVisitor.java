@@ -5,7 +5,7 @@ import pl.put.poznan.ScenarioQualityChecker.model.Scenario;
 import pl.put.poznan.ScenarioQualityChecker.model.Step;
 
 @Getter
-public class CountSpecialStepsScenarioVisitor implements ScenarioVisitor {
+public class CountScenarioStepsVisitor implements ScenarioVisitor {
     private int numberOfSteps = 0;
 
 
