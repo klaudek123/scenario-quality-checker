@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: Java CI with Maven and Javadoc Generation
 
 on:
   push:
@@ -29,3 +29,13 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+
+    - name: Generate Javadoc
+      run: mvn javadoc:javadoc
+    - name: Commit and Push Javadoc
+      run: |
+          git config --global user.email "klaudiusz1tai@gmail.com"
+          git config --global user.name "klaudek123"
+          git add -f /target/maven-status/javadoc
+          git commit -m "Update Javadoc [skip ci]"
+          git push
