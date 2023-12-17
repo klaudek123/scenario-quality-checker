@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>D:/studia/sem_5/IO/scenario-quality-checker</OriginalElement>
+  <nodes>
+    <node x="1135.778829305107" y="-13.345977343890219">pl.put.poznan.ScenarioQualityChecker.logic.CountKeyWordsVisitor</node>
+    <node x="336.41366602196894" y="242.9160387220984">pl.put.poznan.ScenarioQualityChecker.ScenarioQualityCheckerApplication</node>
+    <node x="528.8397507536513" y="58.59132824049628">pl.put.poznan.ScenarioQualityChecker.controller.ScenarioController</node>
+    <node x="1211.2011733734325" y="271.92569782882066">pl.put.poznan.ScenarioQualityChecker.model.Step</node>
+    <node x="881.7426225183572" y="223.92569782882066">pl.put.poznan.ScenarioQualityChecker.model.Scenario</node>
+    <node x="10.246611941940273" y="116.32316852088553">pl.put.poznan.ScenarioQualityChecker.logic.CountScenarioStepsVisitor</node>
+    <node x="575.8397507536513" y="-133.7612816538941">pl.put.poznan.ScenarioQualityChecker.logic.ScenarioVisitor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="pl.put.poznan.ScenarioQualityChecker.logic.CountKeyWordsVisitor" target="pl.put.poznan.ScenarioQualityChecker.logic.ScenarioVisitor" relationship="REALIZATION">
+      <point x="1.706948930859653E-4" y="-67.50002265610978" />
+      <point x="1258.279" y="-35.0" />
+      <point x="698.3399247450894" y="-35.0" />
+      <point x="1.7399143818153107E-4" y="-31.499997498049375" />
+    </edge>
+    <edge source="pl.put.poznan.ScenarioQualityChecker.logic.CountScenarioStepsVisitor" target="pl.put.poznan.ScenarioQualityChecker.logic.ScenarioVisitor" relationship="REALIZATION">
+      <point x="-114.88531158858336" y="-67.50005898024946" />
+      <point x="25.36130035335691" y="-35.0" />
+      <point x="698.3399247450894" y="-35.0" />
+      <point x="1.7399143818153107E-4" y="-31.499997498049375" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6135501355013551" showDependencies="false" x="762.5" y="252.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
