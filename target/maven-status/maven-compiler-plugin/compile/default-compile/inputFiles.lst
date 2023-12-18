@@ -1,3 +1,7 @@
-/Users/mochodek/Documents/Dydaktyka/Wyklady/IO/Laboratory classes/projekt/ioprojectarchitecture/src/main/java/pl/put/poznan/transformer/app/TextTransformerApplication.java
-/Users/mochodek/Documents/Dydaktyka/Wyklady/IO/Laboratory classes/projekt/ioprojectarchitecture/src/main/java/pl/put/poznan/transformer/logic/TextTransformer.java
-/Users/mochodek/Documents/Dydaktyka/Wyklady/IO/Laboratory classes/projekt/ioprojectarchitecture/src/main/java/pl/put/poznan/transformer/rest/TextTransformerController.java
+/Users/jakubklosinski/Desktop/InzOp/projekt/scenario-quality-checker/src/main/java/pl/put/poznan/ScenarioQualityChecker/logic/CountKeyWordsVisitor.java
+/Users/jakubklosinski/Desktop/InzOp/projekt/scenario-quality-checker/src/main/java/pl/put/poznan/ScenarioQualityChecker/model/Step.java
+/Users/jakubklosinski/Desktop/InzOp/projekt/scenario-quality-checker/src/main/java/pl/put/poznan/ScenarioQualityChecker/logic/CountScenarioStepsVisitor.java
+/Users/jakubklosinski/Desktop/InzOp/projekt/scenario-quality-checker/src/main/java/pl/put/poznan/ScenarioQualityChecker/logic/ScenarioVisitor.java
+/Users/jakubklosinski/Desktop/InzOp/projekt/scenario-quality-checker/src/main/java/pl/put/poznan/ScenarioQualityChecker/controller/ScenarioController.java
+/Users/jakubklosinski/Desktop/InzOp/projekt/scenario-quality-checker/src/main/java/pl/put/poznan/ScenarioQualityChecker/model/Scenario.java
+/Users/jakubklosinski/Desktop/InzOp/projekt/scenario-quality-checker/src/main/java/pl/put/poznan/ScenarioQualityChecker/ScenarioQualityCheckerApplication.java
