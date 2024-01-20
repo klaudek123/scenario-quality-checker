@@ -15,7 +15,8 @@ public class Scenario {
     private String title; // Field to store the title of the scenario
     private List<String> actors; // List to store the actors involved in the scenario
     private String systemActor; // Field to store type of system actor
-    private List<Step> steps; // List to store the steps of the scenario
+    @Getter
+    private List<Step> steps = new ArrayList<>();
 
     public Scenario(Step step) {
         steps.add(step);
