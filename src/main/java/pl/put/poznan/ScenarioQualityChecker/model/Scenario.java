@@ -1,8 +1,6 @@
 package pl.put.poznan.ScenarioQualityChecker.model;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
@@ -10,11 +8,16 @@ import java.util.List;
 @Data
 @Getter
 @Setter
-
+@AllArgsConstructor
+@NoArgsConstructor
 // Class representing a Scenario in the system.
 public class Scenario {
     private String title; // Field to store the title of the scenario
     private List<String> actors; // List to store the actors involved in the scenario
     private String systemActor; // Field to store type of system actor
     private List<Step> steps; // List to store the steps of the scenario
+
+    public Scenario(Step step) {
+        steps.add(step);
+    }
 }
