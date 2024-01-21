@@ -1,7 +1,0 @@
-pl\put\poznan\ScenarioQualityChecker\ScenarioQualityCheckerApplication.class
-pl\put\poznan\ScenarioQualityChecker\model\Step.class
-pl\put\poznan\ScenarioQualityChecker\controller\ScenarioController.class
-pl\put\poznan\ScenarioQualityChecker\logic\CountScenarioStepsVisitor.class
-pl\put\poznan\ScenarioQualityChecker\logic\CountKeyWordsVisitor.class
-pl\put\poznan\ScenarioQualityChecker\logic\ScenarioVisitor.class
-pl\put\poznan\ScenarioQualityChecker\model\Scenario.class
