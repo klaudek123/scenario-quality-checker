@@ -2,6 +2,7 @@ package pl.put.poznan.ScenarioQualityChecker.model;
 
 import lombok.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 // Lombok annotations to simplify the creation of data model classes

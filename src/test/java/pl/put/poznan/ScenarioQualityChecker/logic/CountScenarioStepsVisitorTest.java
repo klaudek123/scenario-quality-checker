@@ -2,6 +2,8 @@ package pl.put.poznan.ScenarioQualityChecker.logic;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import pl.put.poznan.ScenarioQualityChecker.model.Scenario;
 import pl.put.poznan.ScenarioQualityChecker.model.Step;
 
@@ -10,17 +12,52 @@ import java.util.Collections;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.*;
 
 public class CountScenarioStepsVisitorTest {
 
     private CountScenarioStepsVisitor visitor;
     private Scenario scenario;
 
+    @Mock
+    private Step mockStep;
+    @Mock
+    private Scenario mockScenario;
+
+
     @Before
     public void setUp() {
+        MockitoAnnotations.openMocks(this); // Inicjalizuje moki
         visitor = new CountScenarioStepsVisitor();
         scenario = new Scenario();
     }
+
+    @Test
+    public void testVisitStepCalledOnSimpleScenario() {
+        when(mockScenario.getSteps()).thenReturn(Collections.singletonList(mockStep));
+        when(mockStep.getSubScenarios()).thenReturn(Collections.emptyList());
+        when(mockStep.getText()).thenReturn("Mocked text");
+
+        visitor.analyzeScenario(mockScenario);
+
+        assertEquals(mockStep.getSubScenarios(), Collections.emptyList());
+        assertEquals(mockStep.getText(), "Mocked text");
+        verify(mockStep, times(1)).getText();
+    }
+
+    @Test
+    public void testVisitStepCalledOnNestedScenarios() {
+        Scenario nestedScenario = mock(Scenario.class);
+        when(nestedScenario.getSteps()).thenReturn(Collections.singletonList(mockStep));
+        when(mockStep.getSubScenarios()).thenReturn(Collections.singletonList(nestedScenario));
+        when(mockScenario.getSteps()).thenReturn(Collections.singletonList(mockStep));
+
+        visitor.analyzeScenario(mockScenario);
+
+        verify(mockStep, times(2)).getText(); // Metoda getText wywołana dla głównego i zagnieżdżonego kroku
+    }
+
+
 
     private Step createStep(String text, List<Scenario> subScenarios) {
         Step step = new Step();

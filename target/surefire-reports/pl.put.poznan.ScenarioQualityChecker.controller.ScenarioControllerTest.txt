@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: pl.put.poznan.ScenarioQualityChecker.controller.ScenarioControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.774 s <<< FAILURE! - in pl.put.poznan.ScenarioQualityChecker.controller.ScenarioControllerTest
+testCountSteps  Time elapsed: 0.741 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <{numberOfSteps=10}> but was: <{numberOfSteps=0}>
+	at pl.put.poznan.ScenarioQualityChecker.controller.ScenarioControllerTest.testCountSteps(ScenarioControllerTest.java:36)
+
+testCountKeyWords  Time elapsed: 0.027 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <{numberOfKeyWords=5}> but was: <{numberOfKeyWords=0}>
+	at pl.put.poznan.ScenarioQualityChecker.controller.ScenarioControllerTest.testCountKeyWords(ScenarioControllerTest.java:50)
+
